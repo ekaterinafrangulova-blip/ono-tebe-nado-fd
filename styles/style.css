@@ -344,6 +344,7 @@ address {
   gap: 48px;
   list-style: none;
   flex-direction: row;
+  padding-left: 22px;
 }
 
 .footer__social-icon {
@@ -368,8 +369,4 @@ address {
 
 .footer__menu-link_active {
   text-decoration: none;
-}
-
-.footer__social-list {
-  padding-left: 22px;
 }
