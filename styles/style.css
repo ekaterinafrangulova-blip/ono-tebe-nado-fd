@@ -41,8 +41,6 @@
 .address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
-  max-width: 240px;
   align-items: flex-start;
   padding-right: 36px;
   font-family: Raleway, sans-serif;
@@ -53,6 +51,11 @@
   text-underline-offset: 3px;
 }
 
+.address__header {
+  justify-self: end;
+  max-width: 240px;
+}
+
 address {
   font-style: normal;
 }
@@ -61,12 +64,6 @@ address {
   width: 100%;
   min-height: 757px;
   position: relative;
-}
-
-.cover__img {
-  position: absolute;
-  inset: 0;
-  object-fit: cover;
   z-index: -2;
   background-image: url("../images/cover.jpg");
   background-size: cover;
@@ -131,14 +128,12 @@ address {
   font-size: 22px;
   color: #FFFFFF;
   line-height: 28px;
-  letter-spacing: 0.005em;
   text-transform: uppercase;
   padding: 10px 100px 50px 50px;
 }
 
 .bet-button {
   font-weight: 500;
-  font-style: Medium;
   font-size: 22px;
   line-height: 100%;
   letter-spacing: normal;
@@ -318,25 +313,17 @@ address {
 .footer {
   width: 100%;
   padding-top: 130px;
+  padding-bottom: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  text-underline-offset: 3px;
 }
 
 .address__footer {
-  display: flex;
-  flex-direction: column;
+  padding-left: 50px;
   justify-self: start;
   max-width: 340px;
-  align-items: flex-start;
-  padding-right: 36px;
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.35em;
-  letter-spacing: 0.005em;
-  text-underline-offset: 4px;
-  padding-left: 50px;
 }
 
 .footer__social-list {
@@ -357,14 +344,16 @@ address {
 }
 
 .footer__menu-list {
-  letter-spacing: 0.075em;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
   list-style: none;
 }
 
 .footer__menu-list-item {
   text-align: center;
   text-underline-offset: 4px;
-  line-height: 1.35em;
 }
 
 .footer__menu-link_active {
